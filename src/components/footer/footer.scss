@@ -1,0 +1,130 @@
+@use "../../styles/varibles" as *;
+@use "../../styles/mixin" as *;
+
+.footer {
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+
+    .logo figure {
+        width: 200px;
+        margin-bottom: 30px;
+    }
+
+    .logo span {
+        display: block;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.33;
+        letter-spacing: -0.01em;
+        background: linear-gradient(180deg, rgba(42, 46, 51, 0.62) 0%, #000 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &-title {
+        font-weight: 500;
+        line-height: 1.25;
+        color: #000;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &-menu a {
+        font-size: 14px;
+        line-height: 1.43;
+        color: $colorTitle;
+    }
+
+    &-menu li:not(last-child) {
+        margin-bottom: 10px;
+    }
+
+    &-social {
+        display: flex;
+        gap: 30px;
+    }
+
+    &-middle {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0;
+        gap: 20px;
+        border-bottom: 1px solid #dfe4ef;
+        border-top: 1px solid #dfe4ef;
+
+        .block {
+            display: flex;
+            gap: 50px;
+        }
+
+
+    }
+
+    &-info span {
+        display: block;
+        margin-bottom: 0px;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: -0.01em;
+        background: linear-gradient(180deg, rgba(42, 46, 51, 0.62) 0%, #000 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &-subtitle {
+        color: #707d8e;
+        font-weight: 500;
+        line-height: 1.25;
+        margin-bottom: 10px;
+    }
+
+
+    &-head {
+        width: 276px;
+        font-size: 18px;
+        line-height: 1.44;
+        letter-spacing: -0.01em;
+        color: #2a2e33;
+        font-style: normal;
+
+        a {
+            font-size: 18px;
+            line-height: 1.44;
+            letter-spacing: -0.01em;
+            color: #2a2e33;
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        padding: 20px 0 55px;
+        justify-content: space-between;
+        gap: 50px;
+
+        .copyright {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: -0.01em;
+            color: $colorTitle;
+        }
+
+        .footer-menu {
+            display: flex;
+            gap: 50px;
+            font-size: 14px;
+            line-height: 1.43;
+            color: $colorTitle;
+
+            li{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}

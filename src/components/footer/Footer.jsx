@@ -1,4 +1,10 @@
 import React from 'react'
+import { footerImg } from '../../assets/images'
+import { footerData } from '../../utils/data'
+import './footer.scss'
+import FooterBlock from './FooterBlock'
+
+
 
 const Footer = () => {
   return (
@@ -7,50 +13,13 @@ const Footer = () => {
             <div className="footer-top">
                 <div className="logo">
                     <figure>
-                        <img src="./img/logo-footer.png" alt="logo-footer"/>
+                        <img src={footerImg} alt="logo-footer"/>
                     </figure>
                     <span>Reimagining Technology</span>
                     <span>Redefining Success.</span>
                 </div>
-                <div className="footer-block">
-                    <span className="footer-title">Company</span>
-                    <ul className="footer-menu">
-                        <li><a href="">About</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Contact </a></li>
-                    </ul>
-                </div>
-                <div className="footer-block">
-                    <span className="footer-title">Services</span>
-                    <ul className="footer-menu">
-                        <li><a href="">Mobile Apps Development</a></li>
-                        <li><a href="">Web Development</a></li>
-                        <li><a href="">UX/UI Design</a></li>
-                        <li><a href="">AI Application Design</a></li>
-                        <li><a href="">Security Services</a></li>
-                        <li><a href="">IoT & Embedded</a></li>
-                    </ul>
-                </div>
-                <div className="footer-block">
-                    <span className="footer-title">Follow us</span>
-                    <div className="footer-social">
-                        <a href="">
-                            <img src="./img/linkendin.svg" alt="linkendin"/>
-                        </a>
-                        <a href="">
-                            <img src="./img/twitter.svg" alt="twitter"/>
-                        </a>
-                        <a href="">
-                            <img src="./img/facebook.svg" alt="facebook"/>
-                        </a>
-                        <a href="">
-                            <img src="./img/be.svg" alt="be"/>
-                        </a>
-                        <a href="">
-                            <img src="./img/site.svg" alt="site"/>
-                        </a>
-                    </div>
-                </div>
+                <FooterBlock footerData = {footerData}/>
+
 
 
             </div>
