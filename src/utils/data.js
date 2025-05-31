@@ -1,5 +1,12 @@
 
 import { FaLinkedin, FaTwitter, FaFacebook, FaBehance, FaGlobe } from "react-icons/fa";
+import avatar from '../assets/Avatar.png'
+import avatar1 from '../assets/Avatar-1.png'
+import avatar2 from '../assets/Avatar-2.png'
+import avatar3 from '../assets/Avatar-3.png'
+import avatar4 from '../assets/Avatar-4.png'
+import avatar5 from '../assets/Avatar-5.png'
+import avatar6 from '../assets/Avatar-6.png'
 
 
 export const footerData = [
@@ -46,37 +53,37 @@ export const testimonialTexts = [
 
 export const testimonialAvatars = [
   {
-    img: './img/Avatar.png',
+    img: avatar,
     name: 'Sarah Johnson',
     job: 'Marketing Manager, Zoho',
   },
   {
-    img: './img/Avatar-1.png',
+    img: avatar1,
     name: 'Daniel Lee',
     job: 'Product Lead, Asana',
   },
   {
-    img: './img/Avatar-2.png',
+    img: avatar2,
     name: 'Emily Smith',
     job: 'CMO, Shopify',
   },
   {
-    img: './img/Avatar-3.png',
+    img: avatar3,
     name: 'Michael Brown',
     job: 'CEO, Trello',
   },
   {
-    img: './img/Avatar-4.png',
+    img: avatar4,
     name: 'Jessica Davis',
     job: 'Brand Manager, HubSpot',
   },
   {
-    img: './img/Avatar-5.png',
+    img: avatar5,
     name: 'James Wilson',
     job: 'Growth Hacker, Airtable',
   },
   {
-    img: './img/Avatar-6.png',
+    img: avatar6,
     name: 'Natalie Martinez',
     job: 'UX Strategist, Notion',
   }

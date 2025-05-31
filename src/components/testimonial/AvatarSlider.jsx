@@ -1,12 +1,12 @@
 import React from 'react'
 import Slider from 'react-slick'
 import { testimonialAvatars } from '../../utils/data'
+import AvatarSlide from './AvatarSlide';
 
 
-const AvatarSlider = ({ textSliderRef, avatarSliderRef }) => {
+const AvatarSlider = ({ nav1, setNav2 }) => {
     const settings = {
-        asNavFor: textSliderRef.current,
-        ref: avatarSliderRef,
+        asNavFor: nav1,
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: true,
@@ -15,13 +15,9 @@ const AvatarSlider = ({ textSliderRef, avatarSliderRef }) => {
         focusOnSelect: true,
     };
     return (
-        <Slider {...settings}>
+        <Slider ref={slider => setNav2(slider)} {...settings}>
             {testimonialAvatars.map((avatar, index) => (
-                <div className="avatar" key={index}>
-                    <img src={avatar.img} alt={`avatar-${index}`} />
-                    <span className="avatar-title">{avatar.name}</span>
-                    <span className="avatar-job">{avatar.job}</span>
-                </div>
+                <AvatarSlide key={index} {...avatar} index={index}/>
             ))}
         </Slider>
     )
