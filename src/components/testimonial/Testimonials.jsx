@@ -17,14 +17,15 @@ const Testimonials = () => {
         <section className="testimonials">
             <div className="container">
                 <InnerTop subtitle='Client Testimonials' title='Voices that prove our excellence' />
-                <TextSlider className='testimonials-slider'
-                    nav2={nav2} setNav1={setNav1}
-                />
-
-                <AvatarSlider className='slider-avatars'
-                    nav1={nav1} setNav2={setNav2}
-                />
             </div>
+            <TextSlider
+                nav2={nav2} setNav1={setNav1}
+            />
+
+            <AvatarSlider className='slider-avatars'
+                nav1={nav1} setNav2={setNav2}
+            />
+
         </section>
     )
 }
