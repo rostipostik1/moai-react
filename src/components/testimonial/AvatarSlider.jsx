@@ -7,19 +7,21 @@ import AvatarSlide from './AvatarSlide';
 const AvatarSlider = ({ nav1, setNav2 }) => {
     const settings = {
         asNavFor: nav1,
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '0px',
         arrows: false,
         focusOnSelect: true,
     };
     return (
-        <Slider ref={slider => setNav2(slider)} {...settings}>
-            {testimonialAvatars.map((avatar, index) => (
-                <AvatarSlide key={index} {...avatar} index={index}/>
-            ))}
-        </Slider>
+        <div className='container'>
+            <Slider className='slider-avatars' ref={slider => setNav2(slider)} {...settings}>
+                {testimonialAvatars.map((avatar, index) => (
+                    <AvatarSlide key={index} {...avatar} index={index} />
+                ))}
+            </Slider>
+        </div>
     )
 }
 

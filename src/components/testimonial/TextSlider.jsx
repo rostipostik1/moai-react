@@ -10,18 +10,17 @@ const TextSlider = ({ nav2, setNav1 }) => {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1, 
-        centerMode: true,
         // prevArrow: <img className="prev slick-btn" src="./assets/arrow-right.svg" alt="prev" />,
         // nextArrow: <img className="next slick-btn" src="./assets/arrow-left.svg" alt="next" />,
     };
     return (
-        <div className='testimonials-slider'> 
-        <Slider  ref={slider => setNav1(slider)} {...settings}>
+        <> 
+        <Slider className='testimonials-slider' ref={slider => setNav1(slider)} {...settings}>
             {testimonialTexts.map((text, index) => (
                 <TextSlide key={index} text={text} />
             ))}
         </Slider>
-        </div>
+        </>
     )
 }
 

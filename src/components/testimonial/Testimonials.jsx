@@ -22,7 +22,7 @@ const Testimonials = () => {
                 nav2={nav2} setNav1={setNav1}
             />
 
-            <AvatarSlider className='slider-avatars'
+            <AvatarSlider
                 nav1={nav1} setNav2={setNav2}
             />
 
