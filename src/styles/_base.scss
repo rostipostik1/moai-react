@@ -130,3 +130,11 @@ body {
 .header-img__radius img {
     border-radius: 30px;
 }
+
+.slick-slide.slick-cloned {
+  pointer-events: none;
+}
+
+.slick-slide.slick-cloned * {
+  tabindex: -1 !important;
+}

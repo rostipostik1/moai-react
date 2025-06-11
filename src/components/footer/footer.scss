@@ -1,11 +1,17 @@
-@use "../../styles/varibles" as *;
-@use "../../styles/mixin" as *;
+@use "../../styles/varibles"as *;
+@use "../../styles/mixin"as *;
 
 .footer {
     &-top {
         display: flex;
         justify-content: space-between;
         padding-bottom: 50px;
+
+        @media (max-width: 1350px) {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
     }
 
     .logo figure {
@@ -58,6 +64,12 @@
 
         .block {
             display: flex;
+            gap: 50px;
+        }
+
+        @media (max-width: 1350px) {
+            justify-content: center;
+            flex-wrap: wrap;
             gap: 50px;
         }
 
@@ -121,7 +133,7 @@
             line-height: 1.43;
             color: $colorTitle;
 
-            li{
+            li {
                 margin-bottom: 0;
             }
         }
