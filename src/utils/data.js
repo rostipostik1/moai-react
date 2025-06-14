@@ -88,3 +88,11 @@ export const testimonialAvatars = [
     job: 'UX Strategist, Notion',
   }
 ];
+
+export const quiseItems = [
+  { id: 1, label: "Strategize" },
+  { id: 2, label: "Design" },
+  { id: 3, label: "Build" },
+  { id: 4, label: "SECURE" },
+  { id: 5, label: "Support" },
+];
