@@ -7,6 +7,8 @@ import avatar3 from '../assets/Avatar-3.png'
 import avatar4 from '../assets/Avatar-4.png'
 import avatar5 from '../assets/Avatar-5.png'
 import avatar6 from '../assets/Avatar-6.png'
+import { quizeImg } from "../assets/images";
+
 
 
 export const footerData = [
@@ -96,3 +98,57 @@ export const quiseItems = [
   { id: 4, label: "SECURE" },
   { id: 5, label: "Support" },
 ];
+
+export const stepContent = {
+  1: {
+    title: "Strategize",
+    subtitle: "Plan and position a successful product in the market",
+    items: [
+      "Target Market and Customer Segmentation",
+      "Competitive Analysis",
+      "Product Roadmap and Development",
+      "Go-to-Market Strategy",
+    ],
+    image: quizeImg, 
+  },
+  2: {
+    title: "Design",
+    subtitle: "Craft beautiful and intuitive interfaces",
+    items: [
+      "Wireframing & Prototyping",
+      "UI Design Systems",
+      "User Testing",
+    ],
+    image: quizeImg,
+  },
+  3: {
+    title: "Build",
+    subtitle: "Turn designs into working products",
+    items: [
+      "Frontend & Backend Development",
+      "Database Integration",
+      "Testing & QA",
+    ],
+    image: quizeImg,
+  },
+  4: {
+    title: "Secure",
+    subtitle: "Ensure your product is protected",
+    items: [
+      "Authentication",
+      "Data Encryption",
+      "Security Audits",
+    ],
+    image: quizeImg,
+  },
+  5: {
+    title: "Support",
+    subtitle: "Keep your product running smoothly",
+    items: [
+      "Monitoring & Analytics",
+      "Bug Fixes",
+      "Customer Support",
+    ],
+    image: quizeImg,
+  },
+};

@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 import './header.scss'
 
 const Header = () => {
-  console.log('hello');
+//   console.log('hello');
   const [fixed, setFixed] = useState(false)
   const handleScroll = () => {
     setFixed(window.scrollY > 50)
@@ -12,7 +12,7 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-    console.log('afrer useefect');
+    // console.log('afrer useefect');
     
   }, [])
   return (
