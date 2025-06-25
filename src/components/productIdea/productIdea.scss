@@ -1,0 +1,130 @@
+@use "../../styles/varibles" as *;
+@use "../../styles/mixin" as *;
+
+.productIdea {
+
+    &-wrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    &-idea {
+        height: 670px;
+        max-width: 420px;
+        width: 100%;
+        border-radius: 30px;
+        padding-top: 240px;
+        transition: 0.3s linear;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 7px 9px 10px 4px #00000078;
+            transform: scale(1.02);
+        }
+    }
+
+    &-content {
+        position: relative;
+        padding: 50px 24px 0;
+
+        .title {
+            display: block;
+            text-align: center;
+            font-size: 40px;
+            line-height: 1.4;
+            letter-spacing: -0.02em;
+            color: $colorTitle;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 50px;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 372px;
+        }
+    }
+
+    .product {
+        background: url(../../assets/type-mashin.jpg) no-repeat center top;
+
+        .productIdea-content {
+            background: linear-gradient(121deg, #f1bc00 0%, #f7cca4 100%);
+            border-radius: 30px;
+            height: 430px;
+        }
+    }
+
+    .faunder {
+        background: url(../../assets/rectangle.jpg) no-repeat center top;
+
+        .productIdea-content {
+            background: linear-gradient(118deg, #937bff 0%, #c1b4ff 100%);
+            border-radius: 30px;
+            height: 430px;
+        }
+    }
+
+    .scale {
+        background: url(../../assets/scale.jpg) no-repeat center top;
+
+        .productIdea-content {
+            background: linear-gradient(118deg, #6ff440 0%, #e6f7a4 100%);
+            border-radius: 30px;
+            height: 430px;
+        }
+    }
+
+    .team-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .team-idea {
+        max-width: 354px;
+        width: 100%;
+        position: relative;
+        border-radius: 20px;
+        transition: .3s linear;
+        cursor: pointer;
+        
+
+        img {
+            border-radius: 20px;
+            height: 100%;
+        }
+
+        .productIdea-content {
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            z-index: 2;
+            color: #fff;
+            padding: 0;
+        }
+
+        .title-name {
+            display: block;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 1.14;
+            letter-spacing: -0.01em;
+            margin-bottom: 5px;
+        }
+
+        .text-job {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 3.11;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, .4784313725);
+        }
+    }
+}

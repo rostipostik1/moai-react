@@ -7,7 +7,8 @@ import avatar3 from '../assets/Avatar-3.png'
 import avatar4 from '../assets/Avatar-4.png'
 import avatar5 from '../assets/Avatar-5.png'
 import avatar6 from '../assets/Avatar-6.png'
-import { quizeImg, services1,services2,services3,services4,services5,services6 } from "../assets/images";
+import { quizeImg, room, services1,services2,services3,services4,services5,services6,boll,square,conference,desktop,office } from "../assets/images";
+
 
 
 
@@ -192,4 +193,85 @@ export const servicesData = [
     image: services6,
   },
 ];
+
+
+export const experienceData = [
+  {
+    id: 1,
+    title: "We Breathe Tech Day & Night",
+    text: "MOAI strives to be your partner in delivering solutions. With our quick turnaround and round the clock support, we would always be your trusted product partner.",
+    image: boll,
+    alt: "boll",
+  },
+  {
+    id: 2,
+    title: "Customized Solutions",
+    text: "We deliver customized solutions that align with your goals, add tangible value, and give you a competitive edge.",
+    image: square,
+    alt: "square",
+  },
+  {
+    id: 3,
+    title: "Peace of mind",
+    text: "No more wondering what we’re doing or when your app will be done. With us, you can expect frequent check-ins, progress updates, and plenty of hand-holding.",
+    image: room,
+    alt: "room",
+  },
+];
+
+
+export const productIdeasData = [
+  {
+    id: 1,
+    title: "Product Strategy & Development",
+    text: "At Moai, we combine our deep product management and technological expertise to build cost effective, robust and secure products.",
+    extraClass: "product",
+  },
+  {
+    id: 2,
+    title: "Founder Advisement Program",
+    text: "Led by experienced mentors and industry veterans, equips you with the knowledge and resources needed to make informed decisions and achieve your entrepreneurial goals.",
+    extraClass: "faunder",
+  },
+  {
+    id: 3,
+    title: "Build to Scale",
+    text: "Ensures that your systems are agile, adaptable, and future-proof, allowing you to respond swiftly to market changes and seize new opportunities.",
+    extraClass: "scale",
+  },
+];
+
+
+export const deliveredData = [
+  {
+    id: 1,
+    image: office,
+    alt: "office",
+    title: "UX review presentations",
+    text: "How do you create compelling presentations that wow your colleagues and impress your managers?",
+    tags: ["ux", "Product Design", "fintech"],
+  },
+  {
+    id: 2,
+    image: conference,
+    alt: "conference",
+    title: "Migrating to Linear 101",
+    text: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+    tags: ["ux", "Next JS", "Testing", "SAAS"],
+  },
+  {
+    id: 3,
+    image: desktop,
+    alt: "desktop",
+    title: "Building your API Stack",
+    text: "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
+    tags: ["React", "Automotive"],
+  },
+];
+
+
+
+
+
+
 

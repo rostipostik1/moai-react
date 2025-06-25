@@ -6,6 +6,9 @@ import Services from '../components/services/Services'
 import Strategy from '../components/strategy/Strategy'
 import NotSure from '../components/not-sure/NotSure'
 import Experience from '../components/experience/Experience'
+import ProductIdea from '../components/productIdea/ProductIdea'
+import Delivered from '../components/delivered/Delivered'
+import NotSure2 from '../components/notSure2/NotSure2'
 
 const HomePage = () => {
   return (
@@ -17,6 +20,9 @@ const HomePage = () => {
       <Strategy/>
       <NotSure/>
       <Experience/>
+      <ProductIdea/>
+      <Delivered/>
+      <NotSure2/>
     </>
   )
 }

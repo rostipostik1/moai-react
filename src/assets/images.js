@@ -7,6 +7,13 @@ import services3 from './services-3.jpg'
 import services4 from './services-4.jpg'
 import services5 from './services-5.jpg'
 import services6 from './services-6.jpg'
+import boll from "./boll.jpg"
+import square from "./square.jpg"
+import room from "./room.jpg"
+import office from "./office.jpg"
+import conference from "./conference.jpg"
+import desktop from "./desktop.jpg"
+
 
 
 export {
@@ -19,4 +26,11 @@ export {
     services4,
     services5,
     services6,
+    boll,
+    square,
+    room,
+    office,
+    conference,
+    desktop,
+    
 }
