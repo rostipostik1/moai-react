@@ -7,7 +7,7 @@ import avatar3 from '../assets/Avatar-3.png'
 import avatar4 from '../assets/Avatar-4.png'
 import avatar5 from '../assets/Avatar-5.png'
 import avatar6 from '../assets/Avatar-6.png'
-import { quizeImg } from "../assets/images";
+import { quizeImg, services1,services2,services3,services4,services5,services6 } from "../assets/images";
 
 
 
@@ -152,3 +152,44 @@ export const stepContent = {
     image: quizeImg,
   },
 };
+
+
+export const servicesData = [
+  {
+    id: 1,
+    title: "Mobile Apps Development",
+    desc: "We don't just code, we create experiences you can bet on.",
+    image: services1,
+  },
+  {
+    id: 2,
+    title: "Web Development",
+    desc: "With Moai, you can bring ideas to life in the digital world.",
+    image: services2,
+  },
+  {
+    id: 3,
+    title: "UX/UI Design",
+    desc: "We at Moai, Elevate user experience through simplicity, empathy, and purposeful design",
+    image: services3,
+  },
+  {
+    id: 4,
+    title: "Security Services",
+    desc: "Safety first, always: Explore our tech security solutions",
+    image: services4,
+  },
+  {
+    id: 5,
+    title: "IoT & Embedded",
+    desc: "IoT excellence, embedded in every solution",
+    image: services5,
+  },
+  {
+    id: 6,
+    title: "AI Application",
+    desc: "Innovate, Create, Iterate: Explore AI development possibilities",
+    image: services6,
+  },
+];
+

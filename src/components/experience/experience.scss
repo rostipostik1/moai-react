@@ -1,0 +1,182 @@
+@use "../../styles/varibles" as *;
+@use "../../styles/mixin" as *;
+
+.experience {
+    padding: 150px 0;
+
+    &-subtitle {
+        margin: 0 0 16px;
+    }
+
+    &-title {
+        text-align: left;
+    }
+
+
+    &-content {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        &:nth-of-type(odd) {
+            flex-direction: row-reverse;
+            margin: 80px 0;
+
+
+        }
+
+
+
+        p {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 418px;
+            font-size: 18px;
+            line-height: 1.44;
+            letter-spacing: -0.01em;
+            color: $colorTitle;
+        }
+
+    }
+
+
+
+    &-content__about {
+        justify-content: space-between;
+    }
+
+    .content {
+        max-width: 490px;
+        width: 100%;
+
+        h3 {
+            @include ffinstrument(28px, 600);
+            line-height: 1.14;
+            letter-spacing: -0.01em;
+            color: $colorTitle;
+        }
+
+        figure {
+            max-width: 640px;
+            width: 100%;
+        }
+    }
+
+    &-img__about {
+        position: relative;
+        max-width: 761px;
+        width: 100%;
+        padding-right: 56px;
+    }
+
+    &-list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    #ex {
+        position: absolute;
+        top: 26px;
+        right: 45px;
+    }
+
+    &-item {
+        border-radius: 5px;
+        background: #e5ebf2;
+        display: inline-block;
+        padding: 10px 13px;
+    }
+
+    #gr {
+        top: 50%;
+        position: absolute;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    #lead {
+        position: absolute;
+        right: 85px;
+        bottom: 121px;
+    }
+
+    #qa {
+        position: absolute;
+        bottom: 0;
+        right: 191px;
+    }
+
+    #gl {
+        position: absolute;
+        bottom: 31px;
+        left: 252px;
+    }
+
+    #cast {
+        position: absolute;
+        left: 55px;
+        bottom: 144px;
+    }
+
+    #glb {
+        position: absolute;
+        left: 229px;
+        top: 45%;
+        transform: translateY(-50%);
+    }
+
+    #inov {
+        position: absolute;
+        left: 89px;
+        top: 126px;
+    }
+
+    #col {
+        position: absolute;
+        top: 77px;
+        left: 55%;
+        transform: translateX(-50%);
+    }
+
+    &-content__bottom {
+        position: relative;
+        max-width: 436px;
+        width: 100%;
+        padding-right: 16px;
+
+        img {
+            width: 100%;
+        }
+
+        .experience-item {
+            padding: 10px 15px;
+            line-height: 1.44;
+            font-size: 18px;
+        }
+    }
+
+    #Values {
+        position: absolute;
+        right: 0;
+        top: 45%;
+        transform: translateY(-50%);
+    }
+
+    #Goals {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 75px;
+    }
+
+    #Purpose {
+        position: absolute;
+        left: -30px;
+        top: 129px;
+    }
+
+}
