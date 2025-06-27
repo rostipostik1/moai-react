@@ -3,7 +3,7 @@ import './not-sure.scss'
 
 const NotSure2 = () => {
   return (
-        <div className="not-sure padding-large">
+        <div className="not-sure">
             <div className="container">
                 <div className="not-sure__wrapper">
                     <h2>Book a free consultation

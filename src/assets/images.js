@@ -13,6 +13,8 @@ import room from "./room.jpg"
 import office from "./office.jpg"
 import conference from "./conference.jpg"
 import desktop from "./desktop.jpg"
+import icon404 from "./page-not-found.svg"
+
 
 
 
@@ -32,5 +34,6 @@ export {
     office,
     conference,
     desktop,
+    icon404,
     
 }

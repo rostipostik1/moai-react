@@ -270,6 +270,17 @@ export const deliveredData = [
 ];
 
 
+export const navMenu = [
+  { id: 1, label: "Home", to: "/" },
+  { id: 2, label: "Services", to: "/services" },
+  { id: 3, label: "About", to: "/about" },
+  { id: 4, label: "Career", to: "/career" },
+  { id: 5, label: "Contact Us", to: "/contact" },
+];
+
+
+
+
 
 
 

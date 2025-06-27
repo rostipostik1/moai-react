@@ -1,8 +1,17 @@
 import React from 'react'
+import {icon404} from '../assets/images'
+
 
 const Error404 = () => {
   return (
-    <div>Error404</div>
+    <main>
+
+      <div className="error-block">
+        <h1>Error 404</h1>
+        <img src={icon404} alt="404" />
+      </div>
+    </main>
+    
   )
 }
 

@@ -29,6 +29,12 @@ body {
     @include ffinstrument(16px, 400);
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .container {
     max-width: 1300px;
     width: 100%;
@@ -132,9 +138,23 @@ body {
 }
 
 .slick-slide.slick-cloned {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .slick-slide.slick-cloned * {
-  tabindex: -1 !important;
+    tabindex: -1 !important;
+}
+
+.error-block {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 15px 50px;
+
+}
+
+main {
+    flex: 1;
 }
