@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { navMenu } from '../../utils/data'
-import { Link } from 'react-router'
+import { Link, NavLink } from 'react-router'
 
 export const Nav = () => {
   const [activeId, setActiveId] = useState(1);
@@ -14,11 +14,11 @@ export const Nav = () => {
         {navMenu && (
           navMenu.map(item => (
             <li key={item.id} className="menu-item">
-              <Link 
+              <NavLink 
                 to={item.to} 
-                className={`menu-link ${activeId === item.id ? 'active': ''}`}
+                className={ ({isActive}) => `menu-link ${isActive ? 'active' : ''}` }
                 onClick={() => handleClick(item.id)}
-              >{item.label}</Link>
+              >{item.label}</NavLink>
             </li>
           ))
         )}
