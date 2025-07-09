@@ -3,6 +3,9 @@ import SectionHome from '../components/home/SectionHome'
 import Testimonials from '../components/testimonial/Testimonials'
 import { servicesImg } from '../assets/images'
 import Service from '../components/service/Service'
+import Delivered from '../components/delivered/Delivered'
+import Services from '../components/services/Services'
+import NotSureCustom from '../components/notSureCustom/NotSureCustom'
 
 const ServicesPage = () => {
   return (
@@ -22,6 +25,9 @@ const ServicesPage = () => {
       />
       <Testimonials/>
       <Service/>
+      <Delivered/>
+      <Services/>
+      <NotSureCustom/>
     </main>
   )
 }

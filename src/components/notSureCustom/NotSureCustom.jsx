@@ -1,7 +1,7 @@
 import React from 'react'
 import './not-sure.scss'
 
-const NotSure2 = () => {
+const NotSureCustom = () => {
   return (
         <div className="not-sure">
             <div className="container">
@@ -16,4 +16,4 @@ const NotSure2 = () => {
   )
 }
 
-export default NotSure2
+export default NotSureCustom

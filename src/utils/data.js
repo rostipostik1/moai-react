@@ -7,7 +7,7 @@ import avatar3 from '../assets/Avatar-3.png'
 import avatar4 from '../assets/Avatar-4.png'
 import avatar5 from '../assets/Avatar-5.png'
 import avatar6 from '../assets/Avatar-6.png'
-import { quizeImg, room, services1,services2,services3,services4,services5,services6,boll,square,conference,desktop,office } from "../assets/images";
+import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site } from "../assets/images";
 
 
 
@@ -110,7 +110,7 @@ export const stepContent = {
       "Product Roadmap and Development",
       "Go-to-Market Strategy",
     ],
-    image: quizeImg, 
+    image: quizeImg,
   },
   2: {
     title: "Design",
@@ -277,6 +277,120 @@ export const navMenu = [
   { id: 4, label: "Career", to: "/career" },
   { id: 5, label: "Contact Us", to: "/contact" },
 ];
+
+// src/data/servicesData.js
+
+export const serviceList = [
+  {
+    id: 1,
+    title: "Mobile Apps Development",
+    description: "We don`t just code, we create experiences you can bet on",
+    image: ifone,
+    imageAlt: "iPhone",
+    features: [
+      "Application strategy and planning",
+      "UI-UX Design",
+      "Native App Development",
+      "Cross-Platform App Development",
+      "Maintenance & Support",
+      "Security & Compliance"
+    ]
+  },
+  {
+    id: 2,
+    title: "Web App Development",
+    description: "With Moai, you can bring ideas to life in the digital world",
+    image: site,
+    imageAlt: "Website",
+    features: [
+      "Front-End Development",
+      "Back-End Development",
+      "Full-Stack Development",
+      "UI-UX Design",
+      "Custom Web Application Development",
+      "E-Commerce Development",
+      "CMS Development",
+      "Enterprise Application Development"
+    ]
+  },
+  {
+    id: 3,
+    title: "UX/UI Design",
+    description: "With Moai, design experiences that inspire trust.",
+    image: game,
+    imageAlt: "Game Design",
+    features: [
+      "User Research",
+      "User Personals",
+      "Information Architecture",
+      "Wireframing",
+      "Prototyping",
+      "Visual Design",
+      "Usability testing",
+      "Responsive Design",
+      "Accessibility Design",
+      "Interaction Design",
+      "Collaboration and development",
+      "Post launch Analysis"
+    ]
+  },
+  {
+    id: 4,
+    title: "Security Services",
+    description: "Safety first, always: Explore our tech security solutions.",
+    image: locked,
+    imageAlt: "Lock and Security",
+    features: [
+      "DevSecOps Implementation",
+      "Dynamic Vulnerability Assessments",
+      "Security Code review",
+      "Threat Modelling",
+      "Software Composition Analysis",
+      "Security Operations Center",
+      "Red team activity",
+      "Cloud Security",
+      "Configuration Audits",
+      "Penetrations Testing"
+    ]
+  },
+  {
+    id: 5,
+    title: "IoT & Embedded",
+    description: "IoT excellence, embedded in every solution",
+    image: project,
+    imageAlt: "Embedded Project",
+    features: [
+      "Embedded systems Development",
+      "IoT device development & integration",
+      "Hardware & software prototyping",
+      "Real-time application development",
+      "Connectivity and Communication solutions",
+      "Remote monitoring and control",
+      "Security and Data privacy",
+      "Cloud-Based Data management"
+    ]
+  },
+  {
+    id: 6,
+    title: "AI Application",
+    description: "Innovate, Create, Iterate: Explore AI development possibilities",
+    image: robot,
+    imageAlt: "Robot AI",
+    features: [
+      "AI chatbot development",
+      "Recommendation systems",
+      "AI-Powered Business Automations",
+      "AI Integration & Consulting",
+      "Data Analytics & Insights",
+      "Virtual Assistants",
+      "Computer Vision",
+      "Natural Language Processing (NLP)",
+      "Machine Learning solutions"
+    ]
+  }
+];
+
+
 
 
 

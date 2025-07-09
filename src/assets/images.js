@@ -16,6 +16,13 @@ import desktop from "./desktop.jpg"
 import icon404 from "./page-not-found.svg"
 import servicesImg from "./services-moai.jpg"
 import headerAbout from "./header-about.jpg"
+import ifone from "./ifone.jpg"
+import site from "./site.jpg"
+import game from "./game.jpg"
+import locked from "./locked.jpg"
+import project from "./project.jpg"
+import robot from "./robot.jpg"
+
 
 
 
@@ -40,4 +47,10 @@ export {
     icon404,
     servicesImg,
     headerAbout,
+    ifone,
+    site,
+    game,
+    locked,
+    project,
+    robot,
 }

@@ -7,7 +7,7 @@ import NotSure from '../components/not-sure/NotSure'
 import Experience from '../components/experience/Experience'
 import ProductIdea from '../components/productIdea/ProductIdea'
 import Delivered from '../components/delivered/Delivered'
-import NotSure2 from '../components/notSure2/NotSure2'
+import NotSureCustom from '../components/notSureCustom/NotSureCustom'
 import '../components/home/home.scss'
 import { headerImg } from '../assets/images'
 import SectionHome from '../components/home/SectionHome'
@@ -37,7 +37,7 @@ const HomePage = () => {
       <Experience />
       <ProductIdea />
       <Delivered />
-      <NotSure2 />
+      <NotSureCustom />
     </>
   )
 }
