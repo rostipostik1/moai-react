@@ -22,6 +22,11 @@ import game from "./game.jpg"
 import locked from "./locked.jpg"
 import project from "./project.jpg"
 import robot from "./robot.jpg"
+import statement from "./statement.png"
+import mision from "./mision.png"
+
+
+
 
 
 
@@ -53,4 +58,6 @@ export {
     locked,
     project,
     robot,
+    statement,
+    mision,
 }

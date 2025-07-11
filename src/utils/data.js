@@ -392,6 +392,22 @@ export const serviceList = [
 
 
 
+export const experienceValues = [
+  { id: "ex", label: "Excellence" },
+  { id: "col", label: "Collaboration" },
+  { id: "inov", label: "Innovation" },
+  { id: "gl", label: "Global" },
+  { id: "gr", label: "Growth" },
+  { id: "cast", label: "Customer-centric" },
+  { id: "lead", label: "Leadership" },
+  { id: "glb", label: "Global" },         
+  { id: "qa", label: "Quality" }
+];
+
+
+
+
+
 
 
 
