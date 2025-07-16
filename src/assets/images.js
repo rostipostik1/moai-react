@@ -24,6 +24,13 @@ import project from "./project.jpg"
 import robot from "./robot.jpg"
 import statement from "./statement.png"
 import mision from "./mision.png"
+import ball from './ball.jpg'
+import window from './window.jpg'
+import paperBoat from './paper-boat.jpg'
+import boat from './boat.jpg'
+import poster from './poster.jpg'
+import dummy from './dummy.jpg'
+
 
 
 
@@ -60,4 +67,11 @@ export {
     robot,
     statement,
     mision,
+    ball,
+    boat,
+    dummy,
+    paperBoat,
+    poster,
+    window,
+    
 }

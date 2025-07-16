@@ -7,7 +7,7 @@ import avatar3 from '../assets/Avatar-3.png'
 import avatar4 from '../assets/Avatar-4.png'
 import avatar5 from '../assets/Avatar-5.png'
 import avatar6 from '../assets/Avatar-6.png'
-import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site } from "../assets/images";
+import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site, ball, window, paperBoat, boat, poster, dummy } from "../assets/images";
 
 
 
@@ -403,6 +403,55 @@ export const experienceValues = [
   { id: "glb", label: "Global" },         
   { id: "qa", label: "Quality" }
 ];
+
+// src/data/offerCards.js
+
+export const offerCards = [
+  {
+    id: 1,
+    title: "Innovation",
+    text: "We are dedicated to fostering a culture of innovation to continually improve our deliverables.",
+    image: ball,
+    imageAlt: "ball"
+  },
+  {
+    id: 2,
+    title: "Integrity",
+    text: "Moai’s reputation is built on a foundation of integrity, and we protect it with utmost care.",
+    image: window,
+    imageAlt: "window"
+  },
+  {
+    id: 3,
+    title: "Ownership",
+    text: "Our dedication to ownership means we go the extra mile to deliver exceptional results.",
+    image: paperBoat,
+    imageAlt: "paper"
+  },
+  {
+    id: 4,
+    title: "Teamwork",
+    text: "With teamwork at the core of our values, we’re here to support you and deliver success together.",
+    image: boat,
+    imageAlt: "boat"
+  },
+  {
+    id: 5,
+    title: "Customer Empathy",
+    text: "We strive to connect on a human level, making your jouney with us one filled with understanding and care.",
+    image: poster,
+    imageAlt: "poster"
+  },
+  {
+    id: 6,
+    title: "Transparency",
+    text: "Transparency is the foundation of Moai’s relationships, ensuring a clear view of our actions and intentions.",
+    image: dummy,
+    imageAlt: "dummy"
+  }
+];
+
+
 
 
 

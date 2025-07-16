@@ -2,6 +2,7 @@ import React from 'react'
 import SectionHome from '../components/home/SectionHome'
 import { headerAbout } from '../assets/images'
 import Mission from '../components/mission/Mission'
+import Offer from '../components/offer/Offer'
 
 const AboutPage = () => {
   return (
@@ -20,6 +21,7 @@ const AboutPage = () => {
         showScrollLink='scroll for more'
       />
       <Mission/>
+      <Offer/>
 
     </main>
   )
