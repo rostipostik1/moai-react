@@ -7,7 +7,7 @@ import avatar3 from '../assets/Avatar-3.png'
 import avatar4 from '../assets/Avatar-4.png'
 import avatar5 from '../assets/Avatar-5.png'
 import avatar6 from '../assets/Avatar-6.png'
-import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site, ball, window, paperBoat, boat, poster, dummy } from "../assets/images";
+import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site, ball, window, paperBoat, boat, poster, dummy, team1, team2, team3 } from "../assets/images";
 
 
 
@@ -450,6 +450,31 @@ export const offerCards = [
     imageAlt: "dummy"
   }
 ];
+
+// src/data/teamMembers.js
+
+export const teamMembers = [
+  {
+    id: 1,
+    image: team1,
+    name: "Khalil Kothia",
+    position: "COO"
+  },
+  {
+    id: 2,
+    image: team2,
+    name: "Kushang Moorthy",
+    position: "Founder & CEO"
+  },
+  {
+    id: 3,
+    image: team3,
+    name: "Khalil Kothia",
+    position: "HEAD OF DESIGN"
+  }
+];
+
+
 
 
 

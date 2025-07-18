@@ -30,6 +30,12 @@ import paperBoat from './paper-boat.jpg'
 import boat from './boat.jpg'
 import poster from './poster.jpg'
 import dummy from './dummy.jpg'
+import team1 from './team-1.jpg'
+import team2 from './team-2.jpg'
+import team3 from './team-3.jpg'
+
+
+
 
 
 
@@ -73,5 +79,8 @@ export {
     paperBoat,
     poster,
     window,
+    team1,
+    team3,
+    team2,
     
 }

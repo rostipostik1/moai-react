@@ -15,7 +15,7 @@ const Offer = () => {
                 <div className="cards">
                     {offerCards && (
                         offerCards.map((item) => (
-                            <figure className="card-img">
+                            <figure key={item.id} className="card-img">
                                 <img src={item.image} alt={item.imageAlt}/>
                                 <figcaption>
                                     <h4 className="card-title">{item.title}</h4>

@@ -3,6 +3,9 @@ import SectionHome from '../components/home/SectionHome'
 import { headerAbout } from '../assets/images'
 import Mission from '../components/mission/Mission'
 import Offer from '../components/offer/Offer'
+import ProductIdea from '../components/productIdea/ProductIdeaPhoto'
+import Delivered from '../components/delivered/Delivered'
+import Industry from '../components/industry/Industry'
 
 const AboutPage = () => {
   return (
@@ -22,6 +25,9 @@ const AboutPage = () => {
       />
       <Mission/>
       <Offer/>
+      <ProductIdea/>
+      <Delivered/>
+      <Industry/>
 
     </main>
   )
