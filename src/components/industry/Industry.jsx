@@ -1,5 +1,7 @@
 import React from 'react'
 import InnerTop from '../innerTop/InnerTop'
+import './industry.scss'
+import { industries } from '../../utils/data'
 
 const Industry = () => {
     return (
@@ -8,19 +10,11 @@ const Industry = () => {
                 <div className="industry-content">
                     <InnerTop subtitle='Wealth of Industry Insights' title='Crossing Boundaries, We bring expertise to every project' />
                     <ul className="industry-cards">
-                        <li className="industry-item">web 3</li>
-                        <li className="industry-item">Aerospace</li>
-                        <li className="industry-item">Automotive</li>
-                        <li className="industry-item">BFSI</li>
-                        <li className="industry-item">Retail</li>
-                        <li className="industry-item">Healthcare</li>
-                        <li className="industry-item">Education</li>
-                        <li className="industry-item">Adtech</li>
-                        <li className="industry-item">SAAS</li>
-                        <li className="industry-item">Data Management</li>
-                        <li className="industry-item">Food Delivery</li>
-                        <li className="industry-item">Entertainment</li>
-                        <li className="industry-item">Cloud & Infra Management</li>
+                        {industries && (
+                            industries.map(item => (
+                                <li key={item.id} className="industry-item">{item.title}</li>
+                            ))
+                        )}
                     </ul>
                 </div>
                 <div className="industry-img">

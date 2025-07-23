@@ -474,6 +474,26 @@ export const teamMembers = [
   }
 ];
 
+// src/data/industries.js
+
+export const industries = [
+  { id: 1, title: "web 3" },
+  { id: 2, title: "Aerospace" },
+  { id: 3, title: "Automotive" },
+  { id: 4, title: "BFSI" },
+  { id: 5, title: "Retail" },
+  { id: 6, title: "Healthcare" },
+  { id: 7, title: "Education" },
+  { id: 8, title: "Adtech" },
+  { id: 9, title: "SAAS" },
+  { id: 10, title: "Data Management" },
+  { id: 11, title: "Food Delivery" },
+  { id: 12, title: "Entertainment" },
+  { id: 13, title: "Cloud & Infra Management" }
+];
+
+
+
 
 
 
