@@ -33,6 +33,17 @@ import dummy from './dummy.jpg'
 import team1 from './team-1.jpg'
 import team2 from './team-2.jpg'
 import team3 from './team-3.jpg'
+import education from './education.jpg'
+import deliveryFood from './delivery-food.jpg'
+import Aerospace from './Aerospace.jpg'
+import FinancialServices from './Financial Services.jpg'
+import Healthcare from './Healthcare.jpg'
+import web3 from './Web 3.jpg'
+import Automotive from './Automotive.jpg'
+
+
+
+
 
 
 
@@ -82,5 +93,13 @@ export {
     team1,
     team3,
     team2,
+    Aerospace,
+    Automotive,
+    FinancialServices,
+    Healthcare,
+    deliveryFood,
+    education,
+    web3,
+    
     
 }

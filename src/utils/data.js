@@ -7,7 +7,8 @@ import avatar3 from '../assets/Avatar-3.png'
 import avatar4 from '../assets/Avatar-4.png'
 import avatar5 from '../assets/Avatar-5.png'
 import avatar6 from '../assets/Avatar-6.png'
-import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site, ball, window, paperBoat, boat, poster, dummy, team1, team2, team3 } from "../assets/images";
+import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site, ball, window, paperBoat, boat, poster, dummy, team1, team2, team3, Aerospace, Automotive, FinancialServices, Healthcare, deliveryFood, education } from "../assets/images";
+
 
 
 
@@ -491,6 +492,48 @@ export const industries = [
   { id: 12, title: "Entertainment" },
   { id: 13, title: "Cloud & Infra Management" }
 ];
+
+export const industryData = [
+  {
+    image: education,
+    alt: "Education",
+    title: "Education",
+  },
+  {
+    image: deliveryFood,
+    alt: "Delivery Food",
+    title: "Food Delivery",
+  },
+  {
+    image: Aerospace,
+    alt: "Aerospace",
+    title: "Aerospace",
+  },
+  {
+    image: FinancialServices,
+    alt: "Financial Services",
+    title: "Financial Services",
+  },
+  {
+    image: Healthcare,
+    alt: "Healthcare",
+    title: "Healthcare",
+  },
+  {
+    image: Web3,
+    alt: "Web3 Browser",
+    title: "Web3 Browser",
+    description: "Empowering users in a decentralized digital frontier.",
+  },
+  {
+    image: Automotive,
+    alt: "Automotive",
+    title: "Automotive",
+    description:
+      "Offered seamless vehicle management, remote control and real-time insights for Citroën owners.",
+  },
+];
+
 
 
 
