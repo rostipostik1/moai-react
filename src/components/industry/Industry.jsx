@@ -21,8 +21,10 @@ const Industry = () => {
                 <div className="industry-img">
                     <div className="grid-container">
                         {industryData && (
-                            industryData.map(item => (
-                                <div key={item.id} className="grid-item item-6">
+                            industryData.map((item, index) => (
+                                <div
+                                    key={item.id}
+                                    className={`grid-item item-${index + 1}`}>
                                     <img src={item.image} alt={item.alt} />
                                     <span>{item.title}</span>
                                     <div className="industry-block">

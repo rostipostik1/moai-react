@@ -7,7 +7,7 @@ import avatar3 from '../assets/Avatar-3.png'
 import avatar4 from '../assets/Avatar-4.png'
 import avatar5 from '../assets/Avatar-5.png'
 import avatar6 from '../assets/Avatar-6.png'
-import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site, ball, window, paperBoat, boat, poster, dummy, team1, team2, team3, Aerospace, Automotive, FinancialServices, Healthcare, deliveryFood, education } from "../assets/images";
+import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site, ball, window, paperBoat, boat, poster, dummy, team1, team2, team3, Aerospace, Automotive, FinancialServices, Healthcare, deliveryFood, education, web3 } from "../assets/images";
 
 
 
@@ -520,7 +520,7 @@ export const industryData = [
     title: "Healthcare",
   },
   {
-    image: Web3,
+    image: web3,
     alt: "Web3 Browser",
     title: "Web3 Browser",
     description: "Empowering users in a decentralized digital frontier.",

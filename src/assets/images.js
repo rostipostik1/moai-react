@@ -38,21 +38,8 @@ import deliveryFood from './delivery-food.jpg'
 import Aerospace from './Aerospace.jpg'
 import FinancialServices from './Financial Services.jpg'
 import Healthcare from './Healthcare.jpg'
-import web3 from './Web 3.jpg'
+import web3 from './Web3.jpg'
 import Automotive from './Automotive.jpg'
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
