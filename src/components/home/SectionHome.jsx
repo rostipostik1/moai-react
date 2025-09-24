@@ -11,7 +11,6 @@ const SectionHome = ({
     sectionClass,
     wrapperClass,
     contentClass,
-    imgClass,
     showScrollLink,
 }) => {
     return (
@@ -29,7 +28,7 @@ const SectionHome = ({
                         </p>
                         <a href="" className="link--black">{buttonText}</a>
                     </div>
-                    <figure className={`home-img ${imgClass}`}><img src={image} alt={imageAlt} /></figure>
+                    <figure className={`home-img`}><img src={image} alt={imageAlt} /></figure>
                 </div>
             </div>
             <a href={buttonLink} className="link-scrolle">{showScrollLink}</a>

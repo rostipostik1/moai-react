@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from 'react-slick'
 import { testimonialAvatars } from '../../utils/data'
 import AvatarSlide from './AvatarSlide';
+import { DiResponsive } from 'react-icons/di';
 
 
 const AvatarSlider = ({ nav1, setNav2 }) => {
@@ -13,6 +14,15 @@ const AvatarSlider = ({ nav1, setNav2 }) => {
         centerPadding: '0px',
         arrows: false,
         focusOnSelect: true,
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     };
     return (
         <div className='container'>
