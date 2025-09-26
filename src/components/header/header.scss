@@ -1,5 +1,5 @@
-@use "../../styles/varibles" as *;
-@use "../../styles/mixin" as *;
+@use "../../styles/varibles"as *;
+@use "../../styles/mixin"as *;
 
 .header {
   position: relative;
@@ -14,33 +14,33 @@
 
   }
 
-    &-fixed {
+  &-fixed {
+    transition: .3s linear;
+    background: transparent;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+
+  .fixed {
+    position: fixed;
+    z-index: 5;
+
+    .header-fixed {
+      padding: 27px 30px;
+      border-radius: 80px;
+      backdrop-filter: blur(40px);
+      box-shadow: 0 12px 20px -4px rgba(16, 24, 40, 0.05);
+      background: rgba(255, 255, 255, 0.9);
       transition: .3s linear;
-      background: transparent;
-      max-width: 1300px;
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0;
     }
 
-
-    .fixed {
-      position: fixed;
-      z-index: 5;
-
-      .header-fixed {
-        padding: 27px 30px;
-        border-radius: 80px;
-        backdrop-filter: blur(40px);
-        box-shadow: 0 12px 20px -4px rgba(16, 24, 40, 0.05);
-        background: rgba(255, 255, 255, 0.9);
-        transition: .3s linear;
-      }
-
-    }
+  }
 
   &-logo {
     width: 97px;
@@ -67,12 +67,59 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 850px) {
+      position: absolute;
+      top: -200%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      height: 0;
+      z-index: 3;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 50px;
+      padding-top: 50px;
+      overflow: hidden;
+      transition: .3s linear;
+
+      &.active {
+        top: -30px;
+        height: 100vh;
+
+      }
+    }
+  }
+
+  .mobile {
+    display: none;
+    width: 60px;
+    height: 40px;
+
+    @media (max-width: 850px) {
+      display: block;
+      position: relative;
+      z-index: 5;
+      transition: .3s linear;
+
+      svg {
+        font-size: 40px;
+        width: 60px;
+      }
+    }
   }
 
   .menu {
     display: flex;
     flex: 1;
     justify-content: center;
+
+    @media (max-width: 850px) {
+      flex: 0;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    }
 
     &-link {
       padding: 17px;

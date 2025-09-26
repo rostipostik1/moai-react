@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { navMenu } from '../../utils/data'
 import { Link, NavLink } from 'react-router'
 
-export const Nav = () => {
+export const Nav = ({isOpenMenu}) => {
   const [activeId, setActiveId] = useState(1);
   const handleClick = (id) => {
     setActiveId(id);
   };
 
   return (
-    <nav className="nav">
+    <nav className={`nav ${isOpenMenu ? 'active' : ''}`}>
       <ul className="menu">
         {navMenu && (
           navMenu.map(item => (
