@@ -30,10 +30,10 @@ const HomePage = () => {
         showScrollLink='scroll for more'
       />
       <Testimonials />
-      {/* <Strategize />
+      <Strategize />
       <Services />
       <Strategy />
-      <NotSure />
+      {/* <NotSure />
       <Experience />
       <ProductIdea />
       <Delivered />

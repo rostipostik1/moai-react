@@ -2,6 +2,8 @@
 @use "../../styles/mixin" as *;
 
 .home {
+
+  position: relative;
     
   &-wrapper-bottom {
     display: flex;
@@ -13,6 +15,7 @@
     @media(max-width: 1350px) {
       justify-content: center;
       flex-wrap: wrap;
+      gap: 40px;
     }
   }
 
@@ -45,6 +48,10 @@
     letter-spacing: -0.01em;
     color: $colorBlack;
     margin-bottom: 20px;
+
+    @media (max-width: 450px) {
+      font-size: 60px;
+    }
   }
 
   
