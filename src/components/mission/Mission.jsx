@@ -1,5 +1,5 @@
 import React from 'react'
-import './mission.scss'
+import '../experience/experience.scss'
 import { statement, mision } from '../../assets/images'
 import { experienceValues } from '../../utils/data'
 

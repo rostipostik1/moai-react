@@ -33,9 +33,10 @@ const HomePage = () => {
       <Strategize />
       <Services />
       <Strategy />
-      {/* <NotSure />
+      <NotSure />
       <Experience />
       <ProductIdea />
+      {/* 
       <Delivered />
       <NotSureCustom /> */}
     </>

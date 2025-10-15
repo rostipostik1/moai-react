@@ -1,5 +1,5 @@
 import React from 'react'
-import './not-sure.scss'
+import '../not-sure/not-sure.scss'
 
 const NotSureCustom = () => {
   return (

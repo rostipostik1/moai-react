@@ -1,7 +1,9 @@
-@use "../../styles/varibles" as *;
-@use "../../styles/mixin" as *;
+@use "../../styles/varibles"as *;
+@use "../../styles/mixin"as *;
 
 .not-sure {
+    padding: 0 15px;
+
     &__wrapper {
         display: flex;
         padding: 46px 48px 46px 50px;
@@ -9,25 +11,30 @@
         gap: 50px;
         border-radius: 20px;
         align-items: center;
+
+        @media (max-width: 590px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 25px;
+        }
     }
 
     .container {
-        padding: 50px 0px;
-        width: 1300px;
-        height: 336px;
+        padding: 50px 15px;
     }
 
     h2 {
         font-weight: 700;
-        font-size: 64px;
+        font-size: clamp(24px, 5vw, 64px);
         line-height: 1.12;
         letter-spacing: -0.01em;
-        color: #DFF0E1;
-        background-image: radial-gradient(123.44% 123.44% at 56.63% 100.00%, rgb(223, 240, 225) 6.77%, rgb(255, 255, 255) 100%);
+        color: #dff0e1;
+        background-image: radial-gradient(123.44% 123.44% at 56.63% 100%, rgb(223, 240, 225) 6.77%, rgb(255, 255, 255) 100%);
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: rgb(0 0 0 / 39%);
-        width: 967px;
+        -webkit-text-fill-color: rgba(0, 0, 0, .39);
+        max-width: 967px;
+        width: 100%;
 
         span {
             font-size: 18px;
@@ -35,6 +42,10 @@
             letter-spacing: -0.01em;
             color: #fff;
             display: block;
+        }
+
+        @media (max-width: 590px) {
+            text-align: center;
         }
     }
 
@@ -44,7 +55,7 @@
         color: #2a2e33;
         border-radius: 32px;
         padding: 16px 0 16px 35px;
-        width: 185px;
+        min-width: 185px;
         height: 54px;
         box-shadow: inset 0 1px 2px 0 #0293169e, inset 0 -1px 2px 0 #0293169e;
         background: url(../../assets/arrow-contact.svg) no-repeat right 35px center, linear-gradient(180deg, #fff 0%, #dedede 100%);
