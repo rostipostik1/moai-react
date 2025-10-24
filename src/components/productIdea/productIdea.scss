@@ -1,11 +1,13 @@
-@use "../../styles/varibles" as *;
-@use "../../styles/mixin" as *;
+@use "../../styles/varibles"as *;
+@use "../../styles/mixin"as *;
 
 .productIdea {
 
     &-wrapper {
         display: flex;
         gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     &-idea {
@@ -42,7 +44,12 @@
             text-align: center;
             left: 50%;
             transform: translateX(-50%);
-            width: 372px;
+            max-width: 372px;
+            width: 100%;
+
+            @media (max-width: 450px) {
+                padding: 0 15px;
+            }
         }
     }
 
@@ -90,7 +97,7 @@
         border-radius: 20px;
         transition: .3s linear;
         cursor: pointer;
-        
+
 
         img {
             border-radius: 20px;

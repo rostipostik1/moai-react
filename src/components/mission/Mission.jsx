@@ -10,13 +10,6 @@ const Mission = () => {
                 <div className="experience-content">
                     <div className="experience-img__about">
                         <img src={statement} alt="statment" />
-                        <ul className="experience-list" >
-                            {experienceValues && (
-                                experienceValues.map(item => (
-                                    <li key={item.id} className="experience-item" id={item.id}>{item.label}</li>
-                                ))
-                            )}
-                        </ul>
                     </div>
                     <div className="content">
                         <h3>Vision Statement</h3>
@@ -27,11 +20,6 @@ const Mission = () => {
                 <div className="experience-content experience-content__about">
                     <div className="experience-content__bottom">
                         <figure><img src={mision} alt="mision" /></figure>
-                        <ul className="experience-list">
-                            <li className="experience-item" id="Values">Values</li>
-                            <li className="experience-item" id="Goals">Goals</li>
-                            <li className="experience-item" id="Purpose">Purpose</li>
-                        </ul>
                     </div>
 
 

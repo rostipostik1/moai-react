@@ -36,9 +36,8 @@ const HomePage = () => {
       <NotSure />
       <Experience />
       <ProductIdea />
-      {/* 
       <Delivered />
-      <NotSureCustom /> */}
+      <NotSureCustom />
     </>
   )
 }

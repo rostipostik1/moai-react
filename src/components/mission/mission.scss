@@ -1,5 +1,5 @@
-@use "../../styles/varibles" as *;
-@use "../../styles/mixin" as *;
+@use "../../styles/varibles"as *;
+@use "../../styles/mixin"as *;
 
 .experience {
     padding: 150px 0;
@@ -26,7 +26,6 @@
         }
 
 
-
         p {
             margin-top: 30px;
             width: 100%;
@@ -35,6 +34,13 @@
             line-height: 1.44;
             letter-spacing: -0.01em;
             color: $colorTitle;
+        }
+
+        @media (max-width: 1150px) {
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+
         }
 
     }

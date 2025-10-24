@@ -24,10 +24,10 @@ const AboutPage = () => {
         showScrollLink='scroll for more'
       />
       <Mission/>
-      <Offer/>
+      {/* <Offer/>
       <ProductIdea/>
       <Delivered/>
-      <Industry/>
+      <Industry/> */}
 
     </main>
   )

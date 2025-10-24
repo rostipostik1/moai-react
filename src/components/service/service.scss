@@ -1,5 +1,5 @@
-@use "../../styles/varibles" as *;
-@use "../../styles/mixin" as *;
+@use "../../styles/varibles"as *;
+@use "../../styles/mixin"as *;
 
 .service {
     &-subtitle {
@@ -20,10 +20,18 @@
         &:nth-child(even) {
             flex-direction: row-reverse;
             margin-bottom: 250px;
+
+            @media (max-width: 1100px) {
+                margin-bottom: 100px;
+            }
         }
 
         &:nth-child(even):not(:first-child) {
             margin-top: 250px;
+
+            @media (max-width: 1100px) {
+                margin-top: 100px;
+            }
         }
 
         .content {
@@ -36,13 +44,28 @@
                 font-size: 28px;
                 line-height: 1.14;
                 color: $colorTitle;
+
+                @media (max-width: 1100px) {
+                    text-align: center;
+                }
             }
 
-            p{
-                font-size: 40px;
+            p {
+                font-size: clamp(18px, 3vw, 40px);
                 line-height: 1.4;
                 color: #707d8e;
                 margin: 15px 0 50px;
+
+                @media (max-width: 1100px) {
+                    text-align: center;
+                }
+            }
+
+            @media (max-width: 1100px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 15px;
             }
         }
 
@@ -57,7 +80,7 @@
             gap: 10px;
             margin-bottom: 50px;
 
-            li{
+            li {
                 font-size: 14px;
                 line-height: 143%;
                 color: #000;
@@ -65,12 +88,25 @@
                 border-radius: 100px;
                 padding: 10px 20px;
             }
+
+            @media (max-width: 1100px) {
+                justify-content: center;
+            }
         }
 
         figure {
             padding-right: 54px;
             max-width: 630px;
             width: 100%;
+
+            @media (max-width: 1100px) {
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            flex-wrap: wrap-reverse;
+            justify-content: center;
         }
     }
 }
