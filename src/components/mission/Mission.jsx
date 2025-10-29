@@ -1,11 +1,12 @@
 import React from 'react'
-import '../experience/experience.scss'
+// import '../experience/experience.scss'
+import './mission.scss'
 import { statement, mision } from '../../assets/images'
 import { experienceValues } from '../../utils/data'
 
 const Mission = () => {
     return (
-        <section className="experience">
+        <section className="experience-section">
             <div className="container">
                 <div className="experience-content">
                     <div className="experience-img__about">

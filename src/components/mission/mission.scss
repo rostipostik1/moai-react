@@ -1,7 +1,7 @@
 @use "../../styles/varibles"as *;
 @use "../../styles/mixin"as *;
 
-.experience {
+.experience-section {
     padding: 150px 0;
 
     &-subtitle {
@@ -13,7 +13,7 @@
     }
 
 
-    &-content {
+    .experience-content {
         display: flex;
         align-items: center;
         gap: 50px;
@@ -22,7 +22,9 @@
             flex-direction: row-reverse;
             margin: 80px 0;
 
-
+            @media (max-width: 1150px) {
+                flex-wrap: wrap-reverse;
+            }
         }
 
 
@@ -36,18 +38,19 @@
             color: $colorTitle;
         }
 
-        @media (max-width: 1150px) {
-            flex-direction: column;
-            flex-wrap: wrap;
+        @media(max-width: 1150px) {
+            flex-direction: column-reverse;
             justify-content: center;
 
         }
+
+
 
     }
 
 
 
-    &-content__about {
+    .experience-content__about {
         justify-content: space-between;
     }
 
@@ -60,95 +63,35 @@
             line-height: 1.14;
             letter-spacing: -0.01em;
             color: $colorTitle;
+            
         }
 
         figure {
             max-width: 640px;
             width: 100%;
         }
+
+        @media (max-width: 1150px) {
+            h3, p {
+                text-align: center;
+                max-width: 100%;
+            }
+        }
     }
 
-    &-img__about {
+    .experience-img__about {
         position: relative;
         max-width: 761px;
         width: 100%;
         padding-right: 56px;
+
+        @media (max-width: 1150px) {
+            padding-right: 0;
+        }
     }
 
-    &-list {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-    }
 
-    #ex {
-        position: absolute;
-        top: 26px;
-        right: 45px;
-    }
-
-    &-item {
-        border-radius: 5px;
-        background: #e5ebf2;
-        display: inline-block;
-        padding: 10px 13px;
-    }
-
-    #gr {
-        top: 50%;
-        position: absolute;
-        right: 0;
-        transform: translateY(-50%);
-    }
-
-    #lead {
-        position: absolute;
-        right: 85px;
-        bottom: 121px;
-    }
-
-    #qa {
-        position: absolute;
-        bottom: 0;
-        right: 191px;
-    }
-
-    #gl {
-        position: absolute;
-        bottom: 31px;
-        left: 252px;
-    }
-
-    #cast {
-        position: absolute;
-        left: 55px;
-        bottom: 144px;
-    }
-
-    #glb {
-        position: absolute;
-        left: 229px;
-        top: 45%;
-        transform: translateY(-50%);
-    }
-
-    #inov {
-        position: absolute;
-        left: 89px;
-        top: 126px;
-    }
-
-    #col {
-        position: absolute;
-        top: 77px;
-        left: 55%;
-        transform: translateX(-50%);
-    }
-
-    &-content__bottom {
+    .experience-content__bottom {
         position: relative;
         max-width: 436px;
         width: 100%;
@@ -164,25 +107,4 @@
             font-size: 18px;
         }
     }
-
-    #Values {
-        position: absolute;
-        right: 0;
-        top: 45%;
-        transform: translateY(-50%);
-    }
-
-    #Goals {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 75px;
-    }
-
-    #Purpose {
-        position: absolute;
-        left: -30px;
-        top: 129px;
-    }
-
 }

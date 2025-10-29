@@ -40,6 +40,7 @@ import FinancialServices from './Financial Services.jpg'
 import Healthcare from './Healthcare.jpg'
 import web3 from './Web3.jpg'
 import Automotive from './Automotive.jpg'
+import Squares from './squares.jpg'
 
 
 
@@ -87,6 +88,5 @@ export {
     deliveryFood,
     education,
     web3,
-    
-    
+    Squares,
 }
