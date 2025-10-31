@@ -7,7 +7,7 @@ import avatar3 from '../assets/Avatar-3.png'
 import avatar4 from '../assets/Avatar-4.png'
 import avatar5 from '../assets/Avatar-5.png'
 import avatar6 from '../assets/Avatar-6.png'
-import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site, ball, window, paperBoat, boat, poster, dummy, team1, team2, team3, Aerospace, Automotive, FinancialServices, Healthcare, deliveryFood, education, web3 } from "../assets/images";
+import { quizeImg, room, services1, services2, services3, services4, services5, services6, boll, square, conference, desktop, office, game, ifone, locked, project, robot, site, ball, window, paperBoat, boat, poster, dummy, team1, team2, team3, Aerospace, Automotive, FinancialServices, Healthcare, deliveryFood, education, web3, smile, stone, swim, presentation, chess, creative, people } from "../assets/images";
 
 
 
@@ -533,6 +533,66 @@ export const industryData = [
       "Offered seamless vehicle management, remote control and real-time insights for Citroën owners.",
   },
 ];
+
+export const valuesCards = [
+  {
+    id: 1,
+    image: smile,
+    alt: "smile",
+    title: "Customer empathy is more than a value its a promise",
+    text: "Career growth matters but, so does your personal life- we’re dedicated to both."
+  },
+  {
+    id: 2,
+    image: stone,
+    alt: "stone",
+    title: "Cherish life’s important moments",
+    text: "Career growth matters but, so does your personal life- we’re dedicated to both."
+  },
+  {
+    id: 3,
+    image: swim,
+    alt: "swim",
+    title: "Diverse voice - Heart of our team",
+    text: "Career growth matters but, so does your personal life- we’re dedicated to both."
+  },
+  {
+    id: 4,
+    image: swim,
+    alt: "swim",
+    title: "Caring - Commitment beyond workplace",
+    text: "Career growth matters but, so does your personal life- we’re dedicated to both."
+  },
+  {
+    id: 5,
+    image: presentation,
+    alt: "presentation",
+    title: "Leadership - Guidance you can trust",
+    text: "Career growth matters but, so does your personal life- we’re dedicated to both."
+  },
+  {
+    id: 6,
+    image: chess,
+    alt: "chess",
+    title: "Be curious Be innovative",
+    text: "Career growth matters but, so does your personal life- we’re dedicated to both."
+  },
+  {
+    id: 7,
+    image: creative,
+    alt: "creative",
+    title: "Be a Co-owner in our Mission and Vision",
+    text: "Career growth matters but, so does your personal life- we’re dedicated to both."
+  },
+  {
+    id: 8,
+    image: people,
+    alt: "people",
+    title: "Customer Empathy",
+    text: "Career growth matters but, so does your personal life- we’re dedicated to both."
+  }
+];
+
 
 
 

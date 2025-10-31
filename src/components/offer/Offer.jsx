@@ -16,7 +16,7 @@ const Offer = () => {
                     {offerCards && (
                         offerCards.map((item) => (
                             <figure key={item.id} className="card-img">
-                                <img src={item.image} alt={item.imageAlt}/>
+                                <img src={item.image} alt={item.imageAlt} />
                                 <figcaption>
                                     <h4 className="card-title">{item.title}</h4>
                                     <p className="card-text">{item.text}</p>

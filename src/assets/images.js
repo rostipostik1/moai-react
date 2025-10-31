@@ -41,11 +41,23 @@ import Healthcare from './Healthcare.jpg'
 import web3 from './Web3.jpg'
 import Automotive from './Automotive.jpg'
 import Squares from './squares.jpg'
-
-
-
+import aboutOffice from './about-office.jpg'
+import smile from './smile.jpg'
+import stone from './stone.jpg'
+import swim from './swim.jpg'
+import presentation from './presentation.jpg'
+import chess from './chess.jpg'
+import creative from './creative.jpg'
+import people from './people.jpg'
 
 export {
+    smile,
+    stone,
+    swim,
+    presentation,
+    chess,
+    creative,
+    people,
     headerImg,
     footerImg,
     quizeImg,
@@ -89,4 +101,5 @@ export {
     education,
     web3,
     Squares,
+    aboutOffice,
 }

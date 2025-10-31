@@ -1,6 +1,8 @@
 import React from 'react'
 import SectionHome from '../components/home/SectionHome'
 import { Squares } from '../assets/images'
+import AboutUs from '../components/aboutUs/AboutUs'
+import OfferCareer from '../components/offer/OfferCareer'
 
 const CareerPage = () => {
   return (
@@ -19,6 +21,8 @@ const CareerPage = () => {
         buttonLink='#'
         showScrollLink='scroll for more'
       />
+      <AboutUs/>
+      <OfferCareer/>
     </>
   )
 }
