@@ -401,7 +401,7 @@ export const experienceValues = [
   { id: "gr", label: "Growth" },
   { id: "cast", label: "Customer-centric" },
   { id: "lead", label: "Leadership" },
-  { id: "glb", label: "Global" },         
+  { id: "glb", label: "Global" },
   { id: "qa", label: "Quality" }
 ];
 
@@ -592,6 +592,14 @@ export const valuesCards = [
     text: "Career growth matters but, so does your personal life- we’re dedicated to both."
   }
 ];
+
+export const socialIcons = [
+  { icon: FaLinkedin, name: "LinkedIn", url: "#" },
+  { icon: FaTwitter, name: "Twitter", url: "#" },
+  { icon: FaFacebook, name: "Facebook", url: "#" },
+  { icon: FaBehance, name: "Behance", url: "#" },
+  { icon: FaGlobe, name: "Website", url: "#" }
+]
 
 
 

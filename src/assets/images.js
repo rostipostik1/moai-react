@@ -49,7 +49,7 @@ import presentation from './presentation.jpg'
 import chess from './chess.jpg'
 import creative from './creative.jpg'
 import people from './people.jpg'
-import hello from './hello.jpg'
+import hello from './hello.png'
 
 export {
     hello,

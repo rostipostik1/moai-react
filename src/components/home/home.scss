@@ -1,10 +1,10 @@
-@use "../../styles/varibles" as *;
-@use "../../styles/mixin" as *;
+@use "../../styles/varibles"as *;
+@use "../../styles/mixin"as *;
 
 .home {
 
   position: relative;
-    
+
   &-wrapper-bottom {
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,7 @@
     }
   }
 
-  
+
   &-content {
     max-width: 575px;
     width: 100%;
@@ -54,7 +54,7 @@
     }
   }
 
-  
+
   &-text {
     font-size: 24px;
     line-height: 1.5;
@@ -63,12 +63,12 @@
     margin-bottom: 50px;
   }
 
-  
+
   .text-background {
     background-image: url('../../assets/gradient.png');
   }
 
-  
+
   .link-scrolle {
     display: block;
     width: 66px;
@@ -101,5 +101,13 @@
   .home-img {
     max-width: 488px;
     width: 100%;
+  }
+}
+
+.home-wrapper-bottom.contact {
+  .home-subtitle {
+    backdrop-filter: blur(9px);
+    background: linear-gradient(180deg, #fff 0%, #d7e8fd 100%);
+    color: #EA3E40;
   }
 }
