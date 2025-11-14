@@ -3,6 +3,7 @@ import SectionHome from '../components/home/SectionHome'
 import { Squares } from '../assets/images'
 import AboutUs from '../components/aboutUs/AboutUs'
 import OfferCareer from '../components/offer/OfferCareer'
+import NotSureCustom from '../components/notSureCustom/NotSureCustom'
 
 const CareerPage = () => {
   return (
@@ -23,6 +24,7 @@ const CareerPage = () => {
       />
       <AboutUs/>
       <OfferCareer/>
+      <NotSureCustom title='Your Career, Our Passion' subtitle='Let’s explore, innovate and grow together'/>
     </>
   )
 }

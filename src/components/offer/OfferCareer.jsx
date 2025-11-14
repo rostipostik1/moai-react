@@ -6,7 +6,7 @@ import { valuesCards } from '../../utils/data'
 
 const OfferCareer = () => {
     return (
-        <section className="offer padding-large">
+        <section className="offer career padding-large">
             <div className="container">
                 <InnerTop classTitle='offer-title' className="offer-subtitle" subtitle='Join Moai to be part of Transformation' title='A world of opportunities awaits you with us' />
                 <div className="cards">

@@ -6,6 +6,7 @@ import Offer from '../components/offer/Offer'
 import ProductIdea from '../components/productIdea/ProductIdeaPhoto'
 import Delivered from '../components/delivered/Delivered'
 import Industry from '../components/industry/Industry'
+import NotSure from '../components/not-sure/NotSure'
 
 const AboutPage = () => {
   return (
@@ -28,7 +29,7 @@ const AboutPage = () => {
       <ProductIdea/>
       <Delivered/>
       <Industry/>
-
+      <NotSure title='Want to know us further?'/>
     </main>
   )
 }

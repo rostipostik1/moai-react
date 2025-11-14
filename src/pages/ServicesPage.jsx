@@ -27,7 +27,7 @@ const ServicesPage = () => {
       <Service/>
       <Delivered/>
       <Services/>
-      <NotSureCustom/>
+      <NotSureCustom title='Book a free consultation' subtitle='Need a Guidance? Now is the time to Talk to our Consultant.'/>
     </main>
   )
 }

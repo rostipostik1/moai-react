@@ -33,11 +33,11 @@ const HomePage = () => {
       <Strategize />
       <Services />
       <Strategy />
-      <NotSure />
+      <NotSure title='Not sure which one is suitable for you?' />
       <Experience />
       <ProductIdea />
       <Delivered />
-      <NotSureCustom />
+      <NotSureCustom subtitle='Need a Guidance? Now is the time to Talk to our Consultant.' title='Book a free consultation'/>
     </>
   )
 }
