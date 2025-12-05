@@ -46,6 +46,8 @@ export const footerData = [
 ];
 
 
+
+
 export const testimonialTexts = [
   'Highly recommended! The content suggestions provided are spot-on and improved our social media engagement.',
   'Exceptional support! Our productivity improved significantly with their automation tools.',

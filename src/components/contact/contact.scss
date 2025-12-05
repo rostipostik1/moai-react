@@ -3,7 +3,6 @@
 
 .contact {
     padding: 80px 0;
-    background: #fff;
 
     .header-content {
         max-width: 655px;
@@ -27,7 +26,7 @@
 
         h2 {
             font-weight: 700;
-            font-size: 64px;
+            font-size: clamp(30px, 5vw, 64px);
             line-height: 1.12;
             letter-spacing: -0.01em;
             color: $colorTitle;
@@ -94,11 +93,14 @@
     }
 
     h3 {
-        font-size: 18px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #2a2e33;
-        line-height: 1.2;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 1.14;
+        letter-spacing: -0.01em;
+        background: linear-gradient(180deg, rgba(42, 46, 51, 0.62) 0%, #000 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .details {
@@ -110,32 +112,32 @@
             letter-spacing: -0.01em;
             color: #2a2e33;
         }
-    }
 
-    .details-text {
-        margin-bottom: 10px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.25;
-        color: #707d8e;
-    }
-
-    .social-icons {
-        display: flex;
-        gap: 16px;
-
-        img {
-            width: 24px;
-            height: 24px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-
-            &:hover {
-                transform: scale(1.1);
-            }
+        .details-text {
+            margin-bottom: 10px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.25;
+            color: #707d8e;
         }
     }
 
+
+
+    .social-icons {
+        display: flex;
+        gap: 30px;
+    }
+
+    &-icon {
+        font-size: 30px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 
     &-form {
         max-width: 570px;

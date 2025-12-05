@@ -39,9 +39,13 @@ const Contact = () => {
                             <h3>FOLLOW<br />US</h3>
                             <div className="social-icons">
                                 {socialIcons && (
-                                    <Link to={socialIcons.url} key={socialIcons.name}>
-                                        <img src={socialIcons.icon} alt={socialIcons.name} />
-                                    </Link>
+                                    socialIcons.map(({icon: Icon, name, url}, index) => (
+                                        <Link to={url} key={index} area-label='name'>
+                                            {/* <img src={icon} alt={icon} /> */}
+                                            <Icon className="contact-icon"/>
+                                        </Link>
+                                    )
+                                    )
                                 )}
                             </div>
                         </div>
@@ -53,7 +57,7 @@ const Contact = () => {
 
                     <form method="post">
                         <div className="form-group">
-                            <label for="">
+                            <label htmlFor="">
                                 <span>name</span>
                                 <input type="text" name="name" placeholder="Enter your name" />
                             </label>
