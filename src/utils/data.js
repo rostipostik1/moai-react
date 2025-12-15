@@ -603,6 +603,58 @@ export const socialIcons = [
   { icon: FaGlobe, name: "Website", url: "#" }
 ]
 
+export const serviceOptions = [
+  "Mobile Application Development",
+  "Web Application Development",
+  "AI Application Design",
+  "UX UI Design",
+  "Security Services",
+  "IoT & Embedded"
+];
+
+export const formConfig = [
+  {
+    section: "personal",
+    title: "Personal Information",
+    fields: [
+      { name: "name", label: "Name", type: "text", placeholder: "Enter your name" },
+    ],
+  },
+  {
+    section: "contact",
+    title: "Contact Information",
+    fields: [
+      { name: "phone", label: "Phone number", type: "tel", placeholder: "Enter your Phone number" },
+      { name: "email", label: "Email", type: "email", placeholder: "Ex: you@mail.com" },
+    ],
+  },
+  {
+    section: "company",
+    title: "Company Information",
+    fields: [
+      { name: "organization", label: "Organization", type: "text", placeholder: "Enter Organization details" },
+      { name: "designation", label: "Designation", type: "text", placeholder: "Enter Designation" },
+    ],
+  },
+];
+
+export const formFields = [
+  {
+    id: 1,
+    type: "textarea",
+    name: "message",
+    label: "Message for us",
+    placeholder: "Enter your message",
+  },
+  {
+    id: 2,
+    type: "text",
+    name: "privacy",
+    label: "By clicking on submit, I agree with Moai Privacy Policy",
+    isPrivacy: true, // флаг, чтобы не рендерить input
+  },
+];
+
 
 
 

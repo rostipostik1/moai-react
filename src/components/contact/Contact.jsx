@@ -2,6 +2,7 @@ import React from 'react'
 import { socialIcons } from '../../utils/data'
 import { Link } from 'react-router'
 import './contact.scss'
+import ContactForm from '../contactForm/ContactForm'
 const Contact = () => {
     return (
         <section className="contact">
@@ -39,10 +40,9 @@ const Contact = () => {
                             <h3>FOLLOW<br />US</h3>
                             <div className="social-icons">
                                 {socialIcons && (
-                                    socialIcons.map(({icon: Icon, name, url}, index) => (
+                                    socialIcons.map(({ icon: Icon, name, url }, index) => (
                                         <Link to={url} key={index} area-label='name'>
-                                            {/* <img src={icon} alt={icon} /> */}
-                                            <Icon className="contact-icon"/>
+                                            <Icon className="contact-icon" />
                                         </Link>
                                     )
                                     )
@@ -55,58 +55,7 @@ const Contact = () => {
                     <h2>Having a Question or Request?</h2>
                     <p>Share your input and we’ll be in touch shortly</p>
 
-                    <form method="post">
-                        <div className="form-group">
-                            <label htmlFor="">
-                                <span>name</span>
-                                <input type="text" name="name" placeholder="Enter your name" />
-                            </label>
-
-                        </div>
-                        <div className="form-group">
-                            <label for="">
-                                <span>Phone number</span>
-                                <input type="tel" name="phone" placeholder="Enter your Phone number" />
-                            </label>
-                            <label for="">
-                                <span>email</span>
-                                <input type="email" name="email" placeholder="Ex: you@mail.com" />
-                            </label>
-                        </div>
-                        <div className="form-group">
-                            <label for="">
-                                <span>organization</span>
-                                <input type="Organization" name="organization" placeholder="Enter Organization details" />
-                            </label>
-                            <label for="">
-                                <span>Designation</span>
-                                <input type="Designation" name="designation" placeholder="Enter Designation" />
-                            </label>
-
-
-                        </div>
-                        <h4>service</h4>
-                        <div className="form-group services-button">
-                            <button type="button">Mobile Application Development</button>
-                            <button className="active" type="button">Web Application Development</button>
-                            <button type="button">AI Application Design</button>
-                            <button type="button">UX UI Design</button>
-                            <button type="button">Security Services</button>
-                            <button type="button">IoT & Embedded</button>
-                        </div>
-                        <div className="form-group">
-                            <label for="">
-                                <span>message for us</span>
-                                <textarea name="message" placeholder="Enter your message"></textarea>
-                            </label>
-                        </div>
-                        <div className="form-group">
-                            <label className="privacy">
-                                By clicking on submit, I agree with Moai Privacy Policy
-                            </label>
-                        </div>
-                        <button type="submit">Submit</button>
-                    </form>
+                    <ContactForm />
                 </div>
             </div>
         </section>
