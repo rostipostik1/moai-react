@@ -41,7 +41,7 @@ const Header = () => {
       <div className={`header-wrapper ${fixed ? 'fixed' : ''}`}>
         <div className="container">
           <div className="header-fixed">
-            <a href="" className="header-logo"><img src={logo} alt="logo" /></a>
+            <a href="/" className="header-logo"><img src={logo} alt="logo" /></a>
             <Nav isOpenMenu={isOpenMenu} />
             <div className="mobile" onClick={handleClick}>
               {isOpenMenu ? <FaArrowsToCircle /> : <FaBarsStaggered />}
