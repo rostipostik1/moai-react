@@ -85,6 +85,7 @@
 
         @media (max-width: 768px) {
             // grid-template-columns: 1fr;
+            column-gap: 15px;
         }
     }
 
@@ -94,7 +95,7 @@
 
     h3 {
         font-weight: 600;
-        font-size: 28px;
+        font-size: clamp(24px, 2.5vw, 28px);
         line-height: 1.14;
         letter-spacing: -0.01em;
         background: linear-gradient(180deg, rgba(42, 46, 51, 0.62) 0%, #000 100%);
@@ -127,6 +128,10 @@
     .social-icons {
         display: flex;
         gap: 30px;
+
+        @media (max-width: 450px) {
+            gap: 25px;
+        }
     }
 
     &-icon {
@@ -136,6 +141,10 @@
 
         &:hover {
             transform: scale(1.1);
+        }
+
+        @media (max-width: 450px) {
+            font-size: 20px;
         }
     }
 
@@ -290,6 +299,10 @@
                     }
                 }
 
+                .privacy {
+                    color: $colorTitle;
+                }
+
                 @media (max-width: 590px) {
                     flex-direction: column;
 
@@ -327,12 +340,21 @@
                     &.active {
                         border-color: $colorDark;
                     }
+
+                    @media (max-width: 425px) {
+                        width: 100%;
+                    }
                 }
             }
 
             button {
                 padding: 8px 24px;
                 height: 50px;
+                transition: .3s;
+
+                &:hover {
+                    opacity: 0.9;
+                }
 
             }
 
